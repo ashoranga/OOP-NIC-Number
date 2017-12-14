@@ -20,11 +20,18 @@ public class NIC {
         String nicNo = JOptionPane.showInputDialog("NIC No");
         int nicNolength = nicNo.length();
         if (nicNolength == 10) {
-        JOptionPane.showMessageDialog(null,"Correct");
-        }else JOptionPane.showMessageDialog(null,"Incorrect");
-        
-        
+            String vOrX = nicNo.substring(9, 10);
+            if (vOrX.equals("x") || vOrX.equals("v")) {
+                JOptionPane.showMessageDialog(null, "Correct");
+            } else {
+                JOptionPane.showMessageDialog(null, "Incorrect");
+            }
+            JOptionPane.showMessageDialog(null, "Correct");
+        } else {
+            JOptionPane.showMessageDialog(null, "Incorrect");
+        }
+
 // TODO code application logic here
     }
-    
+
 }
