@@ -26,7 +26,6 @@ public class NIC {
             } else {
                 JOptionPane.showMessageDialog(null, "Incorrect");
             }
-            JOptionPane.showMessageDialog(null, "Correct");
         } else {
             JOptionPane.showMessageDialog(null, "Incorrect");
         }
